@@ -60,4 +60,10 @@ align-items: center;
   display: grid;
   column-gap: 1%;
   grid-template-columns: 32.66% 32.66% 32.66%;
+  row-gap: 10px;
+}
+#list .item img{
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
 }
