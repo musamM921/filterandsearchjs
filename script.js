@@ -108,15 +108,22 @@ filter.addEventListener('submit', function(event) {
     event.preventDefault();
     let valueFilter = event.target.elements;
     productFilter = listProducts.filter(item => {
+        //chek category
         if (valueFilter.category.value !== '') {
             // Проверяем, что свойство 'nature' существует в объекте 'item', прежде чем обращаться к свойству 'type'
             if (item.nature && item.nature.type && item.nature.type !== valueFilter.category.value) {
                 return false;
             }
         }
+        //check color
+        if(valueFilter.color.value != ''){
+            if(!item.nature.color.includes(valueFilter.color.value)){
+               return false;
+            }
+        }
         return true;
     })
-    g
+   
 
     showProduct(productFilter);
 })
