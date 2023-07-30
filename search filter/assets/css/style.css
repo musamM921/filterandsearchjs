@@ -47,5 +47,11 @@ align-items: center;
 }
 .filter .item.submit button{
   background-color: #aa82ed;
+  color: #fff;
 
+}
+.countResults{
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px;
 }
