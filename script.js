@@ -92,6 +92,10 @@ function showProduct(productFilter){
         //create name product
         let newTitle = document.createElement('div');
         newTitle.classList.add('title');
+        newTitle.innerText = item.name;
+        newItem.appendChild(newTitle);
+        //create price
+        
 
         list.appendChild(newItem);
     });
