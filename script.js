@@ -116,7 +116,7 @@ filter.addEventListener('submit', function(event) {
         }
         return true;
     })
-    
+    g
 
     showProduct(productFilter);
 })
