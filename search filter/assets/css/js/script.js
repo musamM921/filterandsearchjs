@@ -50,5 +50,29 @@ let listProducts = [
         type: 'Polo'
     }
 },
+{
+    id: 5,
+    name: 'Name product brown',
+    price:  320000,
+    quantity: 30,
+    image: 'img5.jpg',
+    nature: {
+        color: ['brown'],
+        size: ['S', 'M', 'L'],
+        type: 'Polo'
+    }
+},
+{
+    id: 6,
+    name: 'Name product white-black',
+    price:  300000,
+    quantity: 30,
+    image: 'img6.jpg',
+    nature: {
+        color: ['white', 'black'],
+        size: ['S', 'M', 'L'],
+        type: 'Polo'
+    }
+},
 ];
 console.log(listProducts);
