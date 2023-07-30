@@ -29,3 +29,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+.filter .item select,
+.filter .item input, 
+.filter .item button{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-left: 1px solid #ddd;
+}
