@@ -97,23 +97,27 @@ function showProduct(productFilter){
         //create price
         let newPrice = document.createElement('div');
         newPrice.classList.add('price');
-        newPrice.innerText = item.price.toLocaleString() + ' ₣';
+        newPrice.innerText = item.price.toLocaleString() + ' đ';
         newItem.appendChild(newPrice);
 
         list.appendChild(newItem);
     });
 }
-filter.addEventListener('submit', function(event){
+
+filter.addEventListener('submit', function(event) {
     event.preventDefault();
-    let valueFilter = event.target.elemets;
+    let valueFilter = event.target.elements;
     productFilter = listProducts.filter(item => {
-        if(valueFilter.category.value != ''){
-            if(item.nature.type != valueFilter.category.value){
-                
+        if (valueFilter.category.value !== '') {
+            // Проверяем, что свойство 'nature' существует в объекте 'item', прежде чем обращаться к свойству 'type'
+            if (item.nature && item.nature.type && item.nature.type !== valueFilter.category.value) {
+                return false;
             }
         }
         return true;
     })
+    
+
     showProduct(productFilter);
 })
 
