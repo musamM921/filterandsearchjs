@@ -103,5 +103,17 @@ function showProduct(productFilter){
         list.appendChild(newItem);
     });
 }
-console.log(listProducts);
+filter.addEventListener('submit', function(event){
+    event.preventDefault();
+    let valueFilter = event.target.elemets;
+    productFilter = listProducts.filter(item => {
+        if(valueFilter.category.value != ''){
+            if(item.nature.type != valueFilter.category.value){
+                
+            }
+        }
+        return true;
+    })
+    showProduct(productFilter);
+})
 
