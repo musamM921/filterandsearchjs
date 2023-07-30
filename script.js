@@ -121,6 +121,12 @@ filter.addEventListener('submit', function(event) {
                return false;
             }
         }
+        //check name
+        if(valueFilter.name.value != ''){
+            if(!item.name.includes(valueFilter.name.value)){
+                return false;
+            }
+        }
         return true;
     })
    
