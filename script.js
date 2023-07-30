@@ -95,7 +95,10 @@ function showProduct(productFilter){
         newTitle.innerText = item.name;
         newItem.appendChild(newTitle);
         //create price
-        
+        let newPrice = document.createElement('div');
+        newPrice.classList.add('price');
+        newPrice.innerText = item.price.toLocaleString() + ' ₣';
+        newItem.appendChild(newPrice);
 
         list.appendChild(newItem);
     });
