@@ -16,3 +16,8 @@ body{
     
 
 }
+.filter{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+}
