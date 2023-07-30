@@ -127,6 +127,12 @@ filter.addEventListener('submit', function(event) {
                 return false;
             }
         }
+        //check minPrice
+        if(valueFilter.minPrice.value != ''){
+            if(item.price < valueFilter.minPrice.value){
+                return false;
+            }
+        }
         return true;
     })
    
