@@ -37,4 +37,15 @@ align-items: center;
   border: none;
   background-color: transparent;
   border-left: 1px solid #ddd;
+  outline: none;
+
+}
+.filter .item label{
+  display: block;
+  width: 40%;
+  padding: 0 10px ;
+}
+.filter .item.submit button{
+  background-color: #aa82ed;
+
 }
