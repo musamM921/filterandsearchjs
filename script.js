@@ -133,6 +133,12 @@ filter.addEventListener('submit', function(event) {
                 return false;
             }
         }
+        //check maxPrice
+        if(valueFilter.maxPrice.value != ''){
+            if(item.price > valueFilter.maxPrice.value){
+                return false;
+            }
+        }
         return true;
     })
    
