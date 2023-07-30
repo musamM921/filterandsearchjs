@@ -19,6 +19,13 @@ body{
 .filter{
   padding: 20px;
   display: grid;
-  grid-template-columns: 33.333% 33.333% 33.333%;
+  grid-template-columns: 32.666% 32.666% 32.666%;
   column-gap: 1%;
+  row-gap: 10px;
+}
+.filter .item{
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
 }
